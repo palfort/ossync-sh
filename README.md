@@ -24,15 +24,23 @@ Now you can run installation ,then everything is done.
 
 安装指南：
 １ 安装 python, python-pip, 一般linux都带有python了，debian/ubuntu等只需
+
 sudo apt-get install python-pip
 
 2 下载本项目下打包好的Ossync.7z并解压到任意目录，
-修改setting.py，把HOST改成你对应的地区，参考：https://help.aliyun.com/document_detail/31834.html,　并且用您自己的access key 和设置您的bucket和备份目录映射。并用您自己的access id和access key
+
+修改setting.py，把HOST改成你对应的地区，参考：https://help.aliyun.com/document_detail/31834.html ,
+并且用您自己的access key 和设置您的bucket和备份目录映射。并用您自己的access id和access key
 
 3 安装
-$ sudo python setup.py
+需要用root权限
+
+$sudo -H byobu
+
+$python setup.py
 
 5.开始一次备份
+
 $nohup python ossync.py >/dev/null 2>&1 &
 
 成功
