@@ -6,16 +6,16 @@ Replace HOST with your OSS server's place if your OSS is not in Shanghai.
 
 Installation procedure:
 
-1. make sure your linux have python installed. and you need to install python python-pip as well.
+1 make sure your linux have python installed. and you need to install python python-pip as well.
 for ubuntu/debian/linuxmint use
 
 $sudo apt-get install python-pip
 
-2. extract Ossync master.zip, remove config/setting.default.py 
+2 extract Ossync master.zip, remove config/setting.default.py 
 
 $ rm -rf config/setting.default.py
 
-3. download setting.py from this project and put in in Ossync's config path.
+3 download setting.py from this project and put in in Ossync's config path.
 modify it to use your own access key
 
 4 run Ossync installation
