@@ -1,20 +1,20 @@
 
-a simple revision of config file for Aliyun OSSyncone tool 中文安装请看后面说明
-
-* Installation Method
-1 make sure your linux have python installed. and you need to install python python-pip as well.
+*** a simple revision of config file for Aliyun OSSyncone tool ***
+***  中文安装请看后面说明   ***
+*** Installation Method   ***
+a) make sure your linux have python installed. and you need to install python python-pip as well.
 for ubuntu/debian/linuxmint use
 
 $sudo apt-get install python-pip
 
-2 Quick Installation method :
+b) Quick Installation method :
 
 you can simply download Ossyncone.7z and unzip to your path by dwonload Ossynccone.7z and run
 $7z x Ossyncone.7z
 
-Now everything is ready and you can start to modify config/setting.py according to your OSS account.
+Now everything is ready and you can start to modify config/setting.py according to your OSS account(Region,Access ID and KEY).
 
-other installation mehtod- Installation procedure with orignal project file:
+***other installation mehtod- Installation procedure with orignal project file***
 If you try to respect original contributor, you can pull all original files from https://github.com/lanbaba/Ossyncone/archive/master.zip
 extract Ossync master.zip, remove config/setting.default.py 
 And download this setting.py to put it in config folder
