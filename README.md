@@ -1,38 +1,35 @@
-# ossync-sh
-modified config file for oss server in shanghai
-Please pull all original files from https://github.com/lanbaba/Ossyncone/archive/master.zip
-Because of Aliyun OSS DNS change you have to do some modification about the "HOST" and also import necessary python os module.
-Replace HOST with your OSS server's place if your OSS is not in Shanghai.
 
-Installation procedure:
+a simple revision of config file for Aliyun OSSyncone tool 中文安装请看后面说明
 
+* Installation Method
 1 make sure your linux have python installed. and you need to install python python-pip as well.
 for ubuntu/debian/linuxmint use
 
 $sudo apt-get install python-pip
 
-2 extract Ossync master.zip, remove config/setting.default.py 
+2 Quick Installation method :
 
-$rm -rf config/setting.default.py
+you can simply download Ossyncone.7z and unzip to your path by dwonload Ossynccone.7z and run
+$7z x Ossyncone.7z
 
-3 download setting.py from this project and put in in Ossync's config path.
+Now everything is ready and you can start to modify config/setting.py according to your OSS account.
+
+other installation mehtod- Installation procedure with orignal project file:
+If you try to respect original contributor, you can pull all original files from https://github.com/lanbaba/Ossyncone/archive/master.zip
+extract Ossync master.zip, remove config/setting.default.py 
+And download this setting.py to put it in config folder
 modify it to use your own access key. For those OSS server are not in Shanghai, you also need to modify "HOST" with your region according to  https://help.aliyun.com/document_detail/31834.html
 
-4 run Ossync installation
-
-5 start one time backup
-
-done
+Now you can run installation ,then everything is done.
 
 安装指南：
 １ 安装 python, python-pip, 一般linux都带有python了，debian/ubuntu等只需
 sudo apt-get install python-pip
 
-2 下载原始的OSSync软件　https://github.com/lanbaba/Ossyncone/archive/master.zip，并解压，删除config/setting.default.py
+2 下载本项目下打包好的Ossync.7z并解压到任意目录，
+修改setting.py，把HOST改成你对应的地区，参考：https://help.aliyun.com/document_detail/31834.html,　并且用您自己的access key 和设置您的bucket和备份目录映射。并用您自己的access id和access key
 
-3 下载本项目的setting.py ,并放到config目录下，注意您仍要修改setting.py，把HOST改成你对应的地区，参考：https://help.aliyun.com/document_detail/31834.html,　并且用您自己的access key 和设置您的bucket和备份目录镜像
-
-4 安装
+3 安装
 $ sudo python setup.py
 
 5.开始一次备份
